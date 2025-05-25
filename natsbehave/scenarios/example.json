@@ -1,0 +1,32 @@
+{
+  "section": "Top level tests",
+  "scenarios": [
+    {
+      "title":  "Application responds to input messages",
+
+      "on": {
+        "subject":  "test",
+        "headers": {
+          "application": "source"
+        },
+        "data": {
+          "message": "Hello world",
+          "version": 1
+        }
+      },
+
+      "reply": {
+        "subject": "complete",
+        "headers": {
+          "application": "destination"
+        },
+        "data": {
+          "response": "Hi",
+          "schema": "version-1"
+        },
+        "match": "equals",
+        "timeout": 5.0
+      }
+    }
+  ]
+}
