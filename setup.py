@@ -24,7 +24,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/RomanKosobrodov/natsbehave",
     packages=setuptools.find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
-    scripts=['bin/natsbehave'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent"
